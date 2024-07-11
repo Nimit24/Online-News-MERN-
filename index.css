@@ -1,0 +1,265 @@
+/* ./src/index.css */
+
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&family=Dancing+Script:wght@700&display=swap');
+
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+body {
+    font-family: 'Montserrat', sans-serif;
+    display: grid;
+    min-height: 100vh;
+    background: #c3b3b3; /* Darker background */
+    color: #fff; /* White text */
+}
+
+h1 {
+    text-align: center;
+    margin-top: 20px;
+    color: #6a0dad; /* Purple color */
+    font-family: 'Dancing Script', cursive;
+    font-size: 3rem;
+    font-weight: 700;
+}
+
+h2 {
+    text-align: center;
+    margin-top: 20px;
+    color: #fff; /* White text */
+    font-weight: 700;
+}
+
+.container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    max-width: 1200px;
+    margin-block: 2rem;
+    gap: 2rem;
+}
+
+.card {
+    display: flex;
+    flex-direction: column;
+    width: clamp(20rem, calc(20rem + 2vw), 22rem);
+    overflow: hidden;
+    box-shadow: 0 0.2rem 0.4rem rgba(31, 11, 104, 0.2); /* Added box-shadow */
+    border-radius: 1em;
+    background: #3ebf51; /* Slight gray background for cards */
+    margin-bottom: 2rem;
+}
+
+.card__body {
+    padding: 1.5rem;
+    display: flex;
+    flex-direction: column;
+    gap: .75rem;
+}
+
+.tag {
+    align-self: flex-start;
+    padding: .25em .75em;
+    border-radius: 1em;
+    font-size: .75rem;
+    background: #007bff; /* Blue tag background */
+    color: #fafafa; /* White text */
+}
+
+.card__body h4 {
+    font-size: 1.8rem; /* Increased size */
+    text-transform: capitalize;
+    color: #080707; /* Blue title */
+    font-weight: 1500;
+}
+
+.card__body p {
+    font-size: 1.2rem;
+    color: #080707; /* Lighter text */
+    font-weight: 600;
+}
+
+.card__footer {
+    display: flex;
+    padding: 1rem;
+    margin-top: auto;
+    background: #555; /* Darker footer background */
+    border-top: 1px solid #333;
+}
+
+.user {
+    display: flex;
+    gap: .5rem;
+    align-items: center;
+}
+
+.user__info h5 {
+    font-size: 1rem;
+    color: #ffff00; /* Yellow user name */
+    font-weight: 700;
+}
+
+.user__info small {
+    font-size: .875rem;
+    color: #ccc; /* Lighter text */
+}
+
+.form-container {
+    width: 100%;
+    max-width: 500px;
+    margin: 50px auto;
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 .1rem 1rem rgba(0, 0, 0, 0.1);
+}
+
+.form-group {
+    margin-bottom: 15px;
+}
+
+.form-group label {
+    display: block;
+    margin-bottom: 5px;
+    color: #fff; /* White text */
+    font-weight: 700;
+}
+
+.form-group input,
+.form-group textarea,
+.form-group select {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    background-color: #f9f9f9;
+    font-size: 1rem;
+    color: #333;
+}
+
+.form-group textarea {
+    resize: vertical;
+    height: 100px;
+}
+
+.form-group select {
+    background-color: #f2f2f2;
+}
+
+.form-group button {
+    background-color: #6a0dad; /* Purple button background */
+    color: white;
+    padding: 10px 15px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    width: 100%;
+    font-size: 1rem;
+    font-weight: 700;
+}
+
+.form-group button:hover {
+    background-color: #5c0e99; /* Darker purple on hover */
+}
+
+button {
+    background-color: #6a0dad; /* Purple button background */
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    display: block;
+    margin: 0 auto;
+    font-size: 1rem;
+    font-weight: 700;
+}
+
+button:hover {
+    background-color: #5c0e99; /* Darker purple on hover */
+}
+
+.around {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 50px;
+}
+
+.around h1 {
+    margin: 0;
+    font-size: 3.6rem; /* Increased size */
+    color: #6a0dad; /* Purple color */
+    font-family: 'Dancing Script', cursive;
+    font-weight: 700;
+}
+
+.around button {
+    align-self: flex-end;
+}
+
+#tbl button {
+    background-color: #cb2d3e !important;
+    color: white !important;
+    font-weight: 700;
+}
+
+#tbl button:hover {
+    background-color: #c2424f;
+}
+
+#tbl-head {
+    width: 80%;
+    background-color: white;
+    padding: 20px;
+    margin: 50px auto;
+    border-radius: 10px;
+    box-shadow: 0 .1rem 1rem rgba(0, 0, 0, 0.1);
+}
+
+#tbl {
+    width: 90%;
+    border-collapse: collapse;
+    margin: 0 auto;
+    margin-bottom: 50px;
+    margin-top: 30px;
+}
+
+#tbl td,
+#tbl th {
+    border: 1px solid #ddd;
+    padding: 10px;
+}
+
+#tbl th {
+    padding-top: 12px;
+    padding-bottom: 12px;
+    text-align: left;
+    background-color: #007bff; /* Blue header background */
+    color: white;
+    font-size: 1rem;
+    font-weight: 700;
+}
+
+/* Class for author view to change font color to black */
+.author-view {
+    color: #000 !important; /* Black text for the entire body */
+}
+
+.author-view h2,
+.author-view .form-group label,
+.author-view input,
+.author-view textarea,
+.author-view select,
+.author-view .tag,
+.author-view .user__info h5,
+.author-view .user__info small,
+.author-view .card__body h4,
+.author-view .card__body p {
+    color: #000 !important; /* Ensure specific elements are black */
+}
