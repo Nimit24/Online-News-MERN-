@@ -1,0 +1,17 @@
+{
+	"folders": [],
+	"settings": {
+		"files.associations": {
+			"iostream": "cpp",
+			"vector": "cpp",
+			"bitset": "cpp",
+			"chrono": "cpp",
+			"algorithm": "cpp",
+			"map": "cpp",
+			"atomic": "cpp",
+			"cstdlib": "cpp",
+			"unordered_set": "cpp"
+		},
+		"liveServer.settings.multiRootWorkspaceName": "Prompt Engineering"
+	}
+}
